@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section, .output-section {
+    margin-bottom: 20px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+.output-section p {
+    display: flex;
+    align-items: center;
+}
+
+.output-section i {
+    margin-right: 5px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-switch {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.toggle-label:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+.toggle-switch:checked + .toggle-label:before {
+    transform: translateX(35px);
+}
+
+.toggle-switch:checked + .toggle-label {
+    background-color: #007bff;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .container {
+    background-color: #444;
+}
+
+.dark-mode input, .dark-mode select {
+    background-color: #555;
+    color: #f0f0f0;
+    border: 1px solid #666;
+}
+
+.dark-mode button {
+    background-color: #555;
+}

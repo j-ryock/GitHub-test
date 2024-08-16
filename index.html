@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Size Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Size Converter</h1>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggleDarkMode" class="toggle-switch">
+            <label for="toggleDarkMode" class="toggle-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </label>
+        </div>
+        <div class="input-section">
+            <label for="fileSize">Enter file size:</label>
+            <input type="number" id="fileSize" step="0.01" placeholder="Enter size">
+            <label for="unit">Select unit:</label>
+            <select id="unit">
+                <option value="bytes">Bytes</option>
+                <option value="kilobytes">Kilobytes</option>
+                <option value="megabytes">Megabytes</option>
+                <option value="gigabytes">Gigabytes</option>
+            </select>
+            <button id="calculateBtn"><i class="fas fa-calculator"></i> Calculate</button>
+        </div>
+        <div class="output-section">
+            <h2>Converted Sizes:</h2>
+            <p id="outputBytes"><i class="fas fa-database"></i> <span></span> Bytes</p>
+            <p id="outputKilobytes"><i class="fas fa-database"></i> <span></span> Kilobytes</p>
+            <p id="outputMegabytes"><i class="fas fa-database"></i> <span></span> Megabytes</p>
+            <p id="outputGigabytes"><i class="fas fa-database"></i> <span></span> Gigabytes</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
